@@ -27,5 +27,23 @@ Evaluar el comportamiento de los clientes de una empresa de telecomunicaciones e
 
 ##Ejecución del notebook##
 
+### Requisitos previos
+
+- Python 3.9 o superior
+- Jupyter Notebook, JupyterLab o Google Colab
+- Librerías utilizadas:
+  - `pandas`
+  - `numpy`
+  - `matplotlib`
+  - `seaborn`
 
 ##Breve guía de reproducción##
+
+1. **Carga de datos:** se importan `plans.csv`, `users_latam.csv` y `usage.csv`, y se revisa su estructura (dimensiones, tipos de datos, columnas).
+2. **Calidad de datos:** se detectan valores nulos, inválidos y sentinels (valores placeholder que no representan datos reales).
+3. **Estandarización y limpieza:** se unifica el formato de fechas, se tratan los sentinels y se eliminan o corrigen las fechas imposibles.
+4. **Agrupación y resumen por usuario:** se agrega el uso (llamadas y mensajes) por cliente y se calculan estadísticas descriptivas para el año 2024.
+5. **Exploración visual:** se generan las distribuciones de las variables de uso y se identifican outliers.
+6. **Segmentación:** se clasifica a los clientes según su nivel de uso y edad, y se visualizan los segmentos resultantes.
+7. **Conclusiones:** se redacta el insight ejecutivo con hallazgos y recomendaciones para los stakeholders.
+
